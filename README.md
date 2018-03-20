@@ -2,7 +2,7 @@
 
 Build a docker image to run a rstudio server docker and the core of rstudio is based on MRAN(https://mran.microsoft.com/).
 
-![demo](images/demp.png)
+![demo](https://raw.githubusercontent.com/jiankaiwang/rstudio-mran/master/images/demo.png)
 
 ## Rreparation
 
@@ -38,6 +38,7 @@ $ sudo docker stop rstdmran
 $ sudo docker restart rstdmran
 
 # remove the container
+sudo docker rm rstdmran
 ```
 
 ### Interact with Container
@@ -59,6 +60,6 @@ $ sudo docker pull jiankaiwang/rstudio-mran:latest
 
 ```bash
 # start the container
-$ sudo docker run -d -p 8787:8787 --name rstdmran rstudio-mran
+$ sudo docker run -d -p 8787:8787 --name rstdmran jiankaiwang/rstudio-mran
 ```
 
